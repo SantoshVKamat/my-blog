@@ -1,0 +1,13 @@
+<h1> Showing articles listing </h1>
+
+
+<% flash.each do |abc, msg| %>
+<%= msg %>
+<% end %>
+
+<p><strong> Title: </strong> <%= @article.title %>  </p>
+<p><strong> Description: </strong> <%= @article.description %>  </p>
+
+<%= link_to 'Home', root_path %> |
+<%= link_to 'About', about_path %> |
+<%= link_to 'Articles listing page', articles_path %>
